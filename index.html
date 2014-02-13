@@ -3,9 +3,17 @@
   <head>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <script src="js/vendor/d3.v3.min.js"></script>
+    <script src="js/project.js"></script>
   </head>
 
   <body>
+    <div id='graph'></div>
+
+    <script>
+      var graph = wf.graph("#graph");
+      graph.load("ca", "data/hourly_stats_ca.csv")
+
+    </script>
   </body>
 
 </html>
